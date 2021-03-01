@@ -1,0 +1,26 @@
+$backgroundColor: #ffffff;
+$themColor: #f37627;
+$mainColor: #f4f4f4;
+$inputBorderColor: #bac2c9;
+$placeholderColor: #84898d;
+$textColor: #a0a0a0;
+
+@font-face {
+    font-family: myFont;
+    src: url("../../font/Dirooz.ttf");
+}
+
+html,
+body {
+    font-family: myFont;
+}
+
+* {
+    font-family: myFont;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+textarea {
+    resize: none;
+}

@@ -1,0 +1,139 @@
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/tailwind.min.css">
+    <link rel="stylesheet" href="./styles/css/main.css">
+
+
+    <!--For Safari-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Manifest Generator">
+    <link rel="apple-touch-startup-image" href="image/icons/icon-512x512.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="image/icons/icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="256x256" href="image/icons/icon-256x256.png">
+    <link rel="apple-touch-icon" sizes="384x384" href="image/icons/icon-384x384.png">
+    <!--End For Safari-->
+    <!--IE-->
+
+    <meta name="msapplication-TileImage" content="image/icons/icon-192x192.png  ">
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <meta name="msapplication-starturl" content="/">
+
+    <!--End IE-->
+    <meta name="theme-color" content="#3f51b5">
+
+    <link rel="manifest" href="./manifest.json">
+    <link rel="shortcut icon" href="./favicon.ico">
+
+    <title>PWA | Manifest Generator</title>
+</head>
+
+<body class="w-full p-4">
+    <main class="flex flex-col bg-white w-full rounded-md" id="main">
+        <header class="flex justify-center w-full p-4 header rounded-t-md">
+            <h1 class="md:text-xl header__title--headline p-4 bg-white rounded-xl w-full text-center">سازنده منیفست برای
+                وب اپلیکشن های
+                پیشرونده</h1>
+        </header>
+        <form
+            class="mt-10 manifest-form flex flex-col justify-center items-center  w-full sm:w-5/6 md:w-3/4 lg:w-3/5 xl:w-2/3 mx-auto">
+            <div class="flex w-full flex-col md:flex-row px-2">
+                <input type="text" class="manifest-form__input rounded-md w-full p-2 my-3 md:m-2"
+                    placeholder="نام پروژه (App Name)" id="input_name">
+
+                <input type="text" class="manifest-form__input rounded-md w-full p-2 my-3 md:m-2"
+                    placeholder="نام کوتاه (Short Name)" id="input_short_name">
+            </div>
+            <div class="flex w-full flex-col md:flex-row px-2">
+                <input type="text" class="manifest-form__input rounded-md w-full p-2 my-3 md:m-2"
+                    placeholder="رنگ تم (Theme Color)" id="input_theme">
+
+                <input type="text" class="manifest-form__input rounded-md w-full p-2 my-3 md:m-2"
+                    placeholder="رنگ پس زمینه (Background Color)" id="input_background">
+            </div>
+            <div class="flex w-full flex-col md:flex-row px-2 md:px-4">
+                <textarea class="manifest-form__input rounded-md w-full p-2 my-3 h-40"
+                    placeholder="توضیحات (Discription)" id="input_discription"></textarea>
+            </div>
+            <div class="flex w-full flex-col md:flex-row px-2">
+                <input type="text" class="manifest-form__input rounded-md w-full p-2 my-3 md:m-2"
+                    placeholder="آدرس شروع (Start URL)" id="input_start_url">
+
+                <input type="text" class="manifest-form__input rounded-md w-full p-2 my-3 md:m-2"
+                    placeholder="دامنه اپلیکشن (Application Scope)" id="input_scope">
+            </div>
+            <div class="flex w-full flex-col md:flex-row px-2">
+                <input type="text" class="manifest-form__input rounded-md w-full p-2 my-3 md:m-2"
+                    placeholder="زبان (lang)" id="input_lang">
+
+                <input type="text" class="manifest-form__input rounded-md w-full p-2 my-3 md:m-2"
+                    placeholder="سمت (direction)" id="input_direction">
+            </div>
+            <div class='mb-6 flex w-full flex-col md:flex-row px-2'>
+                <div class="flex-shrink w-full inline-block relative my-3 md:mx-2">
+                    <select
+                        class="block appearance-none text-gray-600 w-full bg-white border border-gray-400 shadow-inner px-4 py-2 pr-8 rounded form-input__select " id="input_display">
+                        <option>حالت نمایش (Display Mode)</option>
+                        <option>Browser</option>
+                        <option>Standalone</option>
+                        <option>Minimal UI</option>
+                        <option>Fullscreen</option>
+                    </select>
+                    <div class="pointer-events-none absolute top-0 mt-3  right-0 flex items-center px-2 text-gray-600">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="flex-shrink w-full inline-block relative my-3 md:mx-2">
+                    <select
+                        class="block appearance-none text-gray-600 w-full bg-white border border-gray-400 shadow-inner px-4 py-2 pr-8 rounded form-input__select " id="input_orientation">
+                        <option>گرایش (Orientation)</option>
+                        <option>Any</option>
+                        <option>Portrait</option>
+                        <option>Landscape</option>
+                    </select>
+                    <div class="pointer-events-none absolute top-0 mt-3  right-0 flex items-center px-2 text-gray-600">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div
+            class="mt-10 manifest-form flex flex-col justify-center items-center  w-full sm:w-5/6 md:w-3/4 lg:w-3/5 xl:w-2/3 mx-auto">
+            <button class="text-xl font-bold px-8 py-4 mb-10 form-input__submit text-white rounded-2xl"
+                id="myBtn">ساختن</button>
+        </div>
+    </main>
+
+
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close hidden">&times;</span>
+            <div class="px-3">
+                <textarea class="manifest-form__input rounded-md w-full p-2 my-3 h-40" id="response"></textarea>
+            </div>
+            <div class="flex p-3 pt-0">
+                <button
+                    class="px-2 py-1 bg-blue-600 text-white rounded-full focus:bg-white focus:border-2 focus:border-blue-600 focus:text-black "
+                    id="copy" onclick="copyBtn()">کپی</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
