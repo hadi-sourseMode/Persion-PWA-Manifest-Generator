@@ -2,7 +2,7 @@ if ('serviceWorker' in navigator) {
 
     window.addEventListener('load', function () {
         navigator.serviceWorker
-            .register("/sw.js")
+            .register("/Persion-PWA-Manifest-Generator/sw.js")
             .then(function () {
                 console.log('service worker registered .');
 
