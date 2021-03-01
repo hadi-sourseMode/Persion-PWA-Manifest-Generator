@@ -20,7 +20,7 @@ function app() {
     let input_short_name = document.getElementById("input_short_name").value;
     let input_theme = document.getElementById("input_theme").value;
     let input_background = document.getElementById("input_background").value;
-    let input_discription = document.getElementById("input_discription").innerHTML;
+    let input_discription = document.getElementById("input_discription").value;
     let input_start_url = document.getElementById("input_start_url").value;
     let input_scope = document.getElementById("input_scope").value;
     let input_display = document.getElementById("input_display").value;
