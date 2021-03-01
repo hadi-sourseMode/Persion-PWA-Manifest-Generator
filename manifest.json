@@ -6,8 +6,8 @@
     "background_color": "#f37627",
     "display": "standalone",
     "orientation": "portrait-primary",
-    "start_url": "/index.html?utm_source=homescreen",
-    "scope": "/Persion-PWA-Manifest-Generator",
+    "start_url": "/Persion-PWA-Manifest-Generator/index.html?utm_source=homescreen",
+    "scope": "/Persion-PWA-Manifest-Generator/",
     "dir": "rtl",
     "lang": "en-US",
     "icons": [
