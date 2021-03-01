@@ -7,7 +7,7 @@
     "display": "standalone",
     "orientation": "portrait-primary",
     "start_url": "/index.html?utm_source=homescreen",
-    "scope": "/Persion-PWA-Manifest-Generator/",
+    "scope": "/Persion-PWA-Manifest-Generator",
     "dir": "rtl",
     "lang": "en-US",
     "icons": [
