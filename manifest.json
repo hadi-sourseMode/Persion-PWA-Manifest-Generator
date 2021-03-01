@@ -7,7 +7,7 @@
     "display": "standalone",
     "orientation": "portrait-primary",
     "start_url": "/index.html?utm_source=homescreen",
-    "scope": ".",
+    "scope": "/",
     "dir": "rtl",
     "lang": "en-US",
     "icons": [
